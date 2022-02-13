@@ -3,6 +3,7 @@ import {
   Navbar,
   Nav,
   Offcanvas,
+  NavLink,
   Container,
   //NavLink,
 } from "react-bootstrap";
@@ -23,7 +24,8 @@ function NavbarComp() {
     <Container fluid>
       <Navbar.Brand href="#">Logo Here</Navbar.Brand>
       <Navbar.Toggle aria-controls="offcanvasNavbar" />
-      <Navbar.Offcanvas
+      {/* Navbar Offcampus creates the hamburger menu */}
+      <Navbar.Offcanvas 
         id="offcanvasNavbar"
         aria-labelledby="offcanvasNavbarLabel"
         placement="end"
@@ -32,9 +34,9 @@ function NavbarComp() {
         <Offcanvas.Body>
           <Router>
           <Nav navbar className="justify-content-end flex-grow-1 pe-3">
-            <Link to="/"> Home</Link>
-            <Link to="/Camp"> Camp</Link>
-            <Link to="/About"> About</Link>
+            <NavLink to="/"> Home</NavLink> {/* Use NavLink -- not working right now.*/}
+            <Link to="/Camp"> Camp</Link> {/* Link -- working but displaying inside the navbar, not the browser site*/}
+            <NavLink to="/About"> About</NavLink>
             <Link to="/GetInvolved"> Get Involved</Link>
             <Routes>
               <Route path="/About" element={<About />} />
