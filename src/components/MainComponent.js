@@ -1,33 +1,30 @@
-import React, { Component } from "react";
+import React from "react";
+import NavbarComp from "./NavbarComponent";
 import Home from "./HomeComponent";
-import Navbar from "./NavbarComponent";
+import About from "./AboutUsComponent";
+import Camp from "./CampSection/CampMainComponent";
+import GetInvolved from "./GetInvolvedComponent";
+import {
+  Routes,
+  Route
+} from "react-router-dom";
 
 function Main(params) {
-        return (
-            <div>
-                <Navbar />
-            </div>
-        )
-
-    /*renderSwitch(param) {
-        switch(param) {
-          case 'Home':
-            return '/HomeComponent.js';
-            break;
-        case "Camp 2022":
-            return "./CampSection/MainCampComponent.js"
-            break;
-            case "About":
-            return "/AboutUsComponent.js"
-            break;
-            case "Get Involved":
-            return "/GetInvolvedComponent.js"
-            break;
-            
-          default:
-            return 'foo';
-        }
-      }*/
+  return (
+    <div>
+      <div>
+        <NavbarComp />
+      </div>
+      <div>
+        <Routes>
+          <Route path="/About" element={<About />} />
+          <Route path="/Camp" element={<Camp />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/GetInvolved" element={<GetInvolved />} />
+        </Routes>
+      </div>
+    </div>
+  );
 }
 
 export default Main;

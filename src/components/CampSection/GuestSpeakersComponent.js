@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Carousel from 'react-bootstrap/Carousel'
+
 
 function Title() {
     return (
@@ -6,7 +8,7 @@ function Title() {
     )
 }
 
-function Carousel() {
+function Pictures() {
     return (
         <div>
             <Carousel variant="dark">
@@ -52,7 +54,7 @@ function GuestSpeakers() {
     return (
         <div>
             <Title />
-            <Carousel />
+            <Pictures />
         </div>
     )
 }

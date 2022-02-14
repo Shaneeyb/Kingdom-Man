@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Video from "./VideoComponent.js"
 import GuestSpeakers from './GuestSpeakersComponent.js';
 import Location from './LocationComponent.js';
