@@ -30,7 +30,7 @@ function Picture() {
 
 function RegisterBtn() {
     return (
-      <button onclick="activateLasers()">Register</button>
+      <button onClick={null}>Register Now</button>
     );
 }
 

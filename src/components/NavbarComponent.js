@@ -3,15 +3,15 @@ import {
   Navbar,
   Nav,
   Offcanvas,
-  NavLink,
   Container,
 } from "react-bootstrap";
 import {
   BrowserRouter as Router,
 
 } from "react-router-dom";
+//import Logo from "/assets/images/logo"
 
-//import logo from "/public/images/logo.png"
+import logo from "../images/logo.png";
 
 function NavbarComp() {
   return (
@@ -19,7 +19,7 @@ function NavbarComp() {
       <div>
         <Navbar bg="light" expand={false}>
           <Container fluid>
-            <Navbar.Brand href="#">Logo Here</Navbar.Brand>
+            <Navbar.Brand href={logo}></Navbar.Brand>
             <Navbar.Toggle aria-controls="offcanvasNavbar" />
             {/* Navbar Offcampus creates the hamburger menu */}
             <Navbar.Offcanvas
@@ -31,12 +31,12 @@ function NavbarComp() {
               <Offcanvas.Body>
                 <Router>
                   <Nav navbar className="justify-content-end flex-grow-1 pe-3">
-                    <NavLink to="/"> Home</NavLink>{" "}
+                    <Nav.Link href="/"> Home</Nav.Link>{" "}
                     {/* Use NavLink -- not working right now.*/}
-                    <NavLink to="/Camp"> Camp</NavLink>{" "}
+                    <Nav.Link href="/Camp"> Camp</Nav.Link>{" "}
                     {/* Camp Breaks the page. FIX THIS!! */}
-                    <NavLink to="/About"> About</NavLink>
-                    <NavLink to="/GetInvolved"> Get Involved</NavLink>
+                    <Nav.Link href="/About"> About</Nav.Link>
+                    <Nav.Link href="/GetInvolved"> Get Involved</Nav.Link>
                   </Nav>
                 </Router>
               </Offcanvas.Body>
