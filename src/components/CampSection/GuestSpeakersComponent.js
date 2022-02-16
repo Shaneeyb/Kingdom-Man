@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-
+//import kenobi from "/src/images/kenobi.jpg"
 
 function Title() {
     return (
@@ -19,10 +19,11 @@ function Pictures() {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h5>Obi-Wan Knobi</h5>
+      <h5>Obi-Wan Kenobi</h5>
       <p>He is the greatest of all times. </p>
     </Carousel.Caption>
   </Carousel.Item>
+
   <Carousel.Item>
     <img
       className="d-block w-100"

@@ -6,7 +6,7 @@ import { Carousel } from "react-bootstrap";
 function TopText() {
     return (
         <div>
-            <h1>Who we Are</h1>
+            <h1>Who We Are</h1>
 
             <p>
             Kingdom Man Ministry at Inspire Church is leading the way in Hawaii to reach men and teach them how to live an authentic life as Jesus did. We partner with the Men’s 33 Series to equip each man with the necessary tools to help them discover what it means to live with a generational vision.

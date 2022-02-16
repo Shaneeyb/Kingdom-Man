@@ -13,7 +13,11 @@ import Covid from "./CampSection/TravelersSection/CovidComponent";
 
 function Main(params) {
   return (
-    <div>
+    <div style={{
+      backgroundColor: "#0E1822",
+      color: "white"
+    }}
+    >
       <div>
         <NavbarComp />
       </div>
