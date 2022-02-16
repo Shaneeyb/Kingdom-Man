@@ -11,9 +11,11 @@ function KMVideo() {
 function Text() {
     return (
         <div>
-            <h3>
+            <p style={{
+        padding: "30px"
+      }}>
             Kingdom Man Ministry at Inspire Church is leading the way in Hawaii to reach men and teach them how to live an authentic life as Jesus did. We partner with the Men’s 33 Series to equip each man with the necessary tools to help them discover what it means to live with a generational vision.
-            </h3>
+            </p>
         </div>
     )
 }

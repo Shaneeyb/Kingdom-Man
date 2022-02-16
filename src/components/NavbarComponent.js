@@ -14,15 +14,26 @@ function NavbarComp() {
     <div>
       <div>
         <Navbar 
-        bg="#0E1822" 
+        bg="light" 
         expand={false}
         style={{
-          backgroundColor: "#0E1822",
-          color: "white"
-        }}>
+          height: "80px",
+display: "flex",
+backgroundColor: "transparent",
+justifyContent: "center",
+alignItems: "center",
+position: "sticky",
+top: "0",
+fontSize: "1.3rem",
+borderBottom: "1px solid white" 
+        }}
+        >
           <Container fluid>
             <Navbar.Brand>
-              <img src={logo} style={{ width: "100px", height: "100px" }} />
+              <img src={logo} style={{ 
+                width: "80px", 
+                height: "80px" 
+                }} />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="offcanvasNavbar" />
             {/* Navbar Offcampus creates the hamburger menu */}

@@ -6,7 +6,9 @@ function Header() {
             <h2>
                 Location
             </h2>
-            <h5>
+            <h5 style={{
+        padding: "20px"
+      }}>
             Address: 94-877 Lumiaina St, Waipahu, HI 96797
             </h5>
         </div>
@@ -23,7 +25,9 @@ function Map() {
 
 function LocationDesc() {
     return (
-        <p>
+        <p style={{
+            padding: "20px"
+          }}>
             We choose this location because it is close to our heart. The ___ is known for housing christian events and they have blessed us to be able to host this event. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
     )

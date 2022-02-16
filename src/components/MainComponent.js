@@ -12,11 +12,20 @@ import FAQ from "./CampSection/TravelersSection/FAQComponent";
 import Covid from "./CampSection/TravelersSection/CovidComponent";
 
 function Main(params) {
+
+  const txtAndBGStyle = {
+    backgroundColor: "#0E1822",
+    color: "white",
+    width: "100",
+    overflow: "hidden", //doesn't seem to fix the extra white space. :(
+  height: "100", 
+  margin: "0px",
+  padding: "0px"
+  }
+  
+
   return (
-    <div style={{
-      backgroundColor: "#0E1822",
-      color: "white"
-    }}
+    <div style={txtAndBGStyle} 
     >
       <div>
         <NavbarComp />
