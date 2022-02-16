@@ -19,7 +19,7 @@ function NavbarComp() {
       <div>
         <Navbar bg="light" expand={false}>
           <Container fluid>
-            <Navbar.Brand href={logo}></Navbar.Brand>
+          <Navbar.Brand><img src={logo} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="offcanvasNavbar" />
             {/* Navbar Offcampus creates the hamburger menu */}
             <Navbar.Offcanvas

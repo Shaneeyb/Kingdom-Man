@@ -1,25 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Text() {
     return (
         <div>
-            <h3>
+            <p>
             As you may or may not know, Hawaii is taking covid very seriously. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </h3>
+            </p>
 
-            <h2>
+            <h5>
             Do I have to be vaccinated to attend Kingdom Man?
-            </h2>
+            </h5>
 
-            <h3>
+            <p>
             Yes. In order of hawaii state law, you must show proof of vaccination card as well of ID. We will check these when we check your ticket. 
-            </h3>
+            </p>
 
-            <h2>
+            <h5>
             How does the travel system work during covid?
-            </h2>
+            </h5>
 
-            <h3>
+            <p>
             When traveling from outside the state of Hawaii, you will be required to fill out the Safe travels requirements
              <a href="https://travel.hawaii.gov/#/">HERE </a>
             or go to the website, https://travel.hawaii.gov/#/
@@ -28,10 +28,10 @@ function Text() {
             <a href="https://www.gohawaii.com/travel-requirements">THIS</a>
              website. 
             https://www.gohawaii.com/travel-requirements
-            </h3>
-            <h2>
+            </p>
+            <h5>
             If you have any questions regarding the covid policies, ask them in the form below.
-            </h2>
+            </h5>
         </div>
     )
 }

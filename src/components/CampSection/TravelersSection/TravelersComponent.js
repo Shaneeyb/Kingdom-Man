@@ -1,49 +1,36 @@
 import React from "react";
-import { Tabs, Tab } from "react-bootstrap";
+import { Tabs, Tab } from "@material-ui/core";
+import InfoText from "./InfoComponent";
+import TransportationText from "./TransportationComponent";
+import Hotels from "./HotelsComponent";
+import FAQ from "./FAQComponent";
+import Covid from "./CovidComponent";
 
-// Use Tab Components!!!!!!!
 
-function TravelersNav() {
+const TravelersTab = () => {
+  const [selectedTab, setSelectedTab] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setSelectedTab(newValue);
+  };
+
   return (
-    <div>
-      <Tabs
-        value={value}
-        onChange={handleChange}
-        textColor="secondary"
-        indicatorColor="secondary"
-        aria-label="secondary tabs example"
-      >
-        <Tab value="one" label="Item One" />
-        <Tab value="two" label="Item Two" />
-        <Tab value="three" label="Item Three" />
+    <div position="static">
+      <Tabs value={selectedTab} onChange={handleChange}>
+        <Tab label="Info" />
+        <Tab label="Hotels" />
+        <Tab label="Transportation" />
+        <Tab label="Covid" />
+        <Tab label="FAQ" />
       </Tabs>
+      {selectedTab === 0 && <InfoText />}
+      {selectedTab === 1 && <Hotels />}
+      {selectedTab === 2 && <TransportationText />}
+      {selectedTab === 3 && <Covid />}
+      {selectedTab === 4 && <FAQ />}
     </div>
   );
-}
+};
 
-export default TravelersNav;
+export default TravelersTab;
 
-/*
-<Nav fill variant="tabs" defaultActiveKey="/home">
-  <Nav.Item>
-    <Nav.Link href="/InfoComponent">Info</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="/HotelsComponent">Hotels</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="/TransportationComponent">Transportation</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="/CovidComponent">Covid</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="/FAQComponent">FAQ</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="disabled" disabled>
-      Disabled
-    </Nav.Link>
-  </Nav.Item>
-</Nav>
-*/

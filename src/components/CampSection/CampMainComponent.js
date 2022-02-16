@@ -5,6 +5,7 @@ import Location from './LocationComponent.js';
 //import TravelersComponent from "./CampSection/TravelersSection/TravelersComponent";
 import Schedule from './ScheduleComponent.js';
 import Camping from './CampingComponent.js';
+import TravelersTab from './TravelersSection/TravelersComponent.js';
 
 function Camp () {
   return (
@@ -12,6 +13,7 @@ function Camp () {
     <Video />
       <GuestSpeakers />
       <Location />
+      <TravelersTab />
       <Schedule />
       <Camping />
     </div>

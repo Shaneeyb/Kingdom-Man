@@ -5,7 +5,7 @@ function TopText() {
     <div>
       <h2>Camping</h2>
 
-      <h3>
+      <p>
         You will be sleeping _________. Description of campground. Lorem ipsum
         dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -14,7 +14,7 @@ function TopText() {
         esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
         id est laborum.
-      </h3>
+      </p>
     </div>
   );
 }

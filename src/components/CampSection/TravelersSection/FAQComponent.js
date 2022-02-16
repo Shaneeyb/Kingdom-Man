@@ -7,25 +7,25 @@ function FAQ() {
             Question
             </h2>
 
-            <h3>
+            <p>
             Answer.
-            </h3>
+            </p>
 
             <h2>
             Question
             </h2>
 
-            <h3>
+            <p>
             Answer.
-            </h3>
+            </p>
 
             <h2>
             Question
             </h2>
 
-            <h3>
+            <p>
             Answer.
-            </h3>
+            </p>
         </div>
     )
 }
