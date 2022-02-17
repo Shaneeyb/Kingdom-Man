@@ -46,8 +46,8 @@ function Main(params) {
             <Route path="/CampSection/TravelersSection/FAQComponent" element={<FAQ />} />
           </Routes>
         </Router>
-        <Footer />
       </div>
+        <Footer />
     </div>
   );
 }

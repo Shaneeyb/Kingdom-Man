@@ -4,8 +4,7 @@ function Footer() {
   const style = {
     marginTop: "1rem",
     padding: "1rem",
-    backgroundColor: "red", //"0E1822",
-    position: "fixed",
+    backgroundColor: "#0E1822", //"0E1822",
     bottom: 0,
     left: 0,
     width: "100%",
@@ -13,7 +12,7 @@ function Footer() {
 
   return (
     <div style={style}>
-      <p>This is some content in sticky footer</p>
+      <p> * Footer * This website has been made with love.</p>
     </div>
   );
 }
