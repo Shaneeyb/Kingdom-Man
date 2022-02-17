@@ -10,6 +10,7 @@ import TravelersTab from "./CampSection/TravelersSection/TravelersComponent";
 import Hotels from "./CampSection/TravelersSection/HotelsComponent";
 import FAQ from "./CampSection/TravelersSection/FAQComponent";
 import Covid from "./CampSection/TravelersSection/CovidComponent";
+import Footer from "./FooterComponent";
 
 function Main(params) {
 
@@ -22,7 +23,7 @@ function Main(params) {
   margin: "0px",
   padding: "0px"
   }
-  
+
 
   return (
     <div style={txtAndBGStyle} 
@@ -43,10 +44,9 @@ function Main(params) {
             <Route path="/CampSection/TravelersSection/HotelsComponent" element={<Hotels />} />
             <Route path="/CampSection/TravelersSection/CovidComponent" element={<Covid />} />
             <Route path="/CampSection/TravelersSection/FAQComponent" element={<FAQ />} />
-
-
           </Routes>
         </Router>
+        <Footer />
       </div>
     </div>
   );
