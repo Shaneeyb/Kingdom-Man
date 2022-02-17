@@ -35,7 +35,7 @@ function TopText() {
 function RegisterBtn() {
     return (
       <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', padding: "10px"}}>
-          <button class="btn btn-danger" onClick="activateLasers()">Register</button>
+          <button className="btn btn-danger" onClick="activateLasers()">Register</button>
         
       </div>
     );

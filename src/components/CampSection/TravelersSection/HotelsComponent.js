@@ -1,11 +1,22 @@
 import React from "react";
 
 function TopText() {
+
+  const styles = {
+    h2: {
+      textAlign: "center",
+      padding: "20px"
+    },
+    other: {
+      textAlign: "center",
+      padding: "10px"
+    }
+  };
   return (
     <div>
-      <h2>Name Of Hotel</h2>
-      <h3>Hotel Address Here:</h3>
-      <p>
+      <h2 style={styles.h2} >Name Of Hotel</h2>
+      <h3 style={styles.other} >Hotel Address Here:</h3>
+      <p style={styles.other} >
         Hotel Desc. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
         do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
         ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -24,14 +35,22 @@ function Map() {
 }
 
 function BottomText() {
+
+  const styles = {
+    other: {
+      textAlign: "center",
+      padding: "20px"
+    }
+  }
+
   return (
     <div>
-      <h4>
+      <p style={styles.other}>
         Destance to Inspire, distance to Kingdom Man Location. Lorem ipsum dolor
         sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </h4>
+      </p>
       <a href="https://www.marriott.com/en-us/hotels/hnlmc-waikiki-beach-marriott-resort-and-spa/rooms/#">
           <h3>Reserve a room!</h3>
           </a>

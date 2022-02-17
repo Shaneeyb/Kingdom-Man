@@ -11,6 +11,15 @@ function Camp() {
   const sectionStyle = {
     textAlign: "center",
     padding: "40px 80px",
+    whiteBG: {
+      padding: "40px",
+      backgroundColor: "white",
+      height: "100%",
+      width: "100%",
+      color: "black",
+      textAlign: "center",
+      padding: "40px 80px",
+    }
   };
   return (
     <div>
@@ -21,19 +30,19 @@ function Camp() {
       <section style={sectionStyle}>
         <Video />
       </section>
-      <section style={sectionStyle}>
+      <section style={sectionStyle.whiteBG}>
         <GuestSpeakers />
       </section>
       <section style={sectionStyle}>
         <Location />
       </section>
-      <section style={sectionStyle}>
+      <section style={sectionStyle.whiteBG}>
         <TravelersTab />
       </section>
       <section style={sectionStyle}>
         <Schedule />
       </section>
-      <section style={sectionStyle}>
+      <section style={sectionStyle.whiteBG}>
         <Camping />
       </section>
     </div>

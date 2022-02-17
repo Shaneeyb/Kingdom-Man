@@ -37,13 +37,15 @@ function Join() {
           padding: "50px",
         }}
       >
-        <button class="btn btn-danger" onClick="activateLasers()">
+        <button className="btn btn-danger" onClick="activateLasers()">
           Join Now
         </button>
       </div>
     </div>
   );
 }
+
+
 
 function BottomTextAndForm() {
   const style = {

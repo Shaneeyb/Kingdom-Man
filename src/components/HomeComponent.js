@@ -30,10 +30,18 @@ const styles = {
   }
 
   function RegisterBtn() {
+    function RegisterRoute() {
+      return (
+        <div>
+
+        </div>
+      )
+    }
+
+
     return (
       <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', padding: "80px"}}>
-          <button class="btn btn-danger" onClick="activateLasers()">Activate Lasers</button>
-        
+          <button className="btn btn-danger" onClick={RegisterRoute()} >Activate Lasers</button>
       </div>
     );
   }

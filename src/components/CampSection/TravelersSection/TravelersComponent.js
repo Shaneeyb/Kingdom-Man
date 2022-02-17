@@ -15,7 +15,9 @@ const TravelersTab = () => {
   };
 
   return (
-    <div position="static">
+    <div 
+    position="static"
+    >
       <Tabs value={selectedTab} onChange={handleChange}>
         <Tab label="Info" />
         <Tab label="Hotels" />

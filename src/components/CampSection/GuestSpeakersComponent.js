@@ -10,9 +10,7 @@ function Title() {
 
 function Pictures() {
     return (
-        <div style={{
-          padding: "40px"
-        }}>
+        <div>
             <Carousel variant="light">
   <Carousel.Item>
     <img

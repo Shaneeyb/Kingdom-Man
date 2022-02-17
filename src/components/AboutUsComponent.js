@@ -84,7 +84,16 @@ function About () {
         <div>
             <TopText />
             <Pictures />
+            <div
+            style={{
+          padding: "40px",
+          backgroundColor: "white",
+          height: "100%",
+          width: "100%",
+          color: "black"
+        }}>
             <BottomText />
+            </div>
             <Partners />
         </div>
     )
