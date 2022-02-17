@@ -31,7 +31,7 @@ const styles = {
 
   function RegisterBtn() {
     return (
-      <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
+      <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', padding: "80px"}}>
           <button class="btn btn-danger" onClick="activateLasers()">Activate Lasers</button>
         
       </div>

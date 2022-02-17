@@ -10,8 +10,10 @@ function Title() {
 
 function Pictures() {
     return (
-        <div>
-            <Carousel variant="dark">
+        <div style={{
+          padding: "40px"
+        }}>
+            <Carousel variant="light">
   <Carousel.Item>
     <img
     src="https://assets3.thrillist.com/v1/image/2928355/1536x1024/crop;webp=auto;jpeg_quality=60;progressive.jpg" 

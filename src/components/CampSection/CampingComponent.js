@@ -3,7 +3,17 @@ import React from "react";
 function TopText() {
   return (
     <div>
-      <h2>Camping</h2>
+      <h2 style={{
+        padding: "40px"
+      }}>Camping</h2>
+
+      <div>
+      <img
+     src="https://images.unsplash.com/photo-1610912763956-2d9374070090?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" 
+     alt="camping" 
+      className="d-block w-100"
+    />
+    </div>
 
       <p style={{
         padding: "30px"
@@ -21,14 +31,6 @@ function TopText() {
   );
 }
 
-function Picture() {
-  return (
-    <div>
-      <a href="https://unsplash.com/photos/V7uP-XzqX18" alt="Camping" >
-      </a>
-    </div>
-  );
-}
 
 function RegisterBtn() {
     return (
@@ -40,7 +42,6 @@ function Camping() {
     return (
         <div>
             <TopText />
-            <Picture />
             <RegisterBtn />
         </div>
     )
