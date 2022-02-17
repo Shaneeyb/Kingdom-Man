@@ -11,6 +11,7 @@ import Hotels from "./CampSection/TravelersSection/HotelsComponent";
 import FAQ from "./CampSection/TravelersSection/FAQComponent";
 import Covid from "./CampSection/TravelersSection/CovidComponent";
 import Footer from "./FooterComponent";
+import Register from "./RegisterComponent";
 
 function Main(params) {
   const txtAndBGStyle = {
@@ -36,6 +37,7 @@ function Main(params) {
             <Route path="/Camp" element={<Camp />} />
             <Route path="/" element={<Home />} />
             <Route path="/GetInvolved" element={<GetInvolved />} />
+            <Route path="/RegisterComponent" element={<Register />} />
 
             <Route
               path="/CampSection/TravelersSection/InfoComponent"
@@ -57,6 +59,7 @@ function Main(params) {
               path="/CampSection/TravelersSection/FAQComponent"
               element={<FAQ />}
             />
+           
           </Routes>
         </Router>
       </div>

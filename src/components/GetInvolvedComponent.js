@@ -2,6 +2,8 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import { Button } from "react-bootstrap";
+import Register from "./RegisterComponent";
+import { useNavigate } from "react-router-dom"
 
 function Join() {
   const style = {
@@ -14,6 +16,8 @@ function Join() {
       padding: "10px",
     },
   };
+
+  let navigate= useNavigate();
 
   return (
     <div>
@@ -37,9 +41,10 @@ function Join() {
           padding: "50px",
         }}
       >
-        <button className="btn btn-danger" onClick="activateLasers()">
-          Join Now
-        </button>
+        <button 
+          className="btn btn-danger" 
+          onClick={() => navigate("/RegisterComponent")}
+            >Register</button>
       </div>
     </div>
   );

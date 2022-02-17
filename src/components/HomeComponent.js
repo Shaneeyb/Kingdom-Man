@@ -1,7 +1,13 @@
 import React from "react";
+import Register from "./RegisterComponent";
 //import CampfireBG from "/images/CampfireBG.jpg"
+    import { useNavigate } from "react-router-dom"
 
 function Home() {
+
+  let navigate = useNavigate();
+
+
   function HeaderText() {
 
 const styles = {
@@ -30,18 +36,13 @@ const styles = {
   }
 
   function RegisterBtn() {
-    function RegisterRoute() {
-      return (
-        <div>
-
-        </div>
-      )
-    }
-
 
     return (
       <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', padding: "80px"}}>
-          <button className="btn btn-danger" onClick={RegisterRoute()} >Activate Lasers</button>
+          <button 
+          className="btn btn-danger" 
+          onClick={() => navigate("/RegisterComponent")}
+            >Register</button>
       </div>
     );
   }
