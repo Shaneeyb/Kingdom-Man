@@ -30,7 +30,9 @@ function TopText() {
 function Pictures() {
     return (
         <div>
-            <Carousel>
+            <Carousel style={{
+              padding: "40px"
+            }}>
   <Carousel.Item>
     <img
       className="d-block w-100"
@@ -103,9 +105,14 @@ function BottomText() {
 
 function Partners() {
     return (
-        <div>
-            
-        </div>
+      <div>
+      <img
+      height="70px" width= "20px"
+     src="https://images.squarespace-cdn.com/content/v1/5a7cc3b0914e6b8d66356df6/1625178027847-121QVL7M8542AWXUUG32/Screen+Shot+2021-07-01+at+12.12.35+PM.png" 
+     alt="camping" 
+      className="d-block w-100"
+    />
+    </div>
     )
 }
 
