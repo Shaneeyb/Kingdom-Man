@@ -13,7 +13,7 @@ function Register() {
         },
         h3: {
           textAlign: "center",
-          padding: "10px",
+          padding: "10px 80px",
         },
       };
 

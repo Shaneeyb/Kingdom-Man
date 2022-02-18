@@ -13,10 +13,12 @@ function Home() {
 const styles = {
   main: {
     textAlign: 'center',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    padding: "60px"
   },
   date: {
-    textAlign: "center"
+    textAlign: "center",
+    padding: "20px"
   }
 }
 
@@ -38,10 +40,26 @@ const styles = {
   function RegisterBtn() {
 
     return (
-      <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', padding: "80px"}}>
+      <div style={{
+        display: 'flex',  
+        justifyContent:'center',
+        alignItems:'center', 
+        padding: "60px"
+        
+        }}>
           <button 
           className="btn btn-danger" 
-          onClick={() => navigate("/RegisterComponent")}
+          onClick={() => navigate("/RegisterComponent"
+          )}
+          style={{
+            padding: "3vh",
+          border: "none",
+          height: "100px",
+          width: "300px",
+          fontSize: "60px",
+          justifyContent: "center",
+          textAlign: "top"
+          }}
             >Register</button>
       </div>
     );
