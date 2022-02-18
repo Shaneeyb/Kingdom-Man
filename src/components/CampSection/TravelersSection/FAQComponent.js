@@ -1,33 +1,41 @@
 import React from "react";
 
 function FAQ() {
-    return (
-        <div>
-            <h2>
-            Question
-            </h2>
+  return (
+    <div
+      style={{
+        padding: "20px",
+      }}
+    >
+      <b>
+        <h2
+          style={{
+            padding: "5px"
+          }}
+        >
+          FAQ
+        </h2>
+      </b>
 
-            <p>
-            Answer.
-            </p>
+      <h3
+        style={{
+          padding: "10px",
+        }}
+      >
+        Question
+      </h3>
 
-            <h2>
-            Question
-            </h2>
+      <p>Answer.</p>
 
-            <p>
-            Answer.
-            </p>
+      <h3>Question</h3>
 
-            <h2>
-            Question
-            </h2>
+      <p>Answer.</p>
 
-            <p>
-            Answer.
-            </p>
-        </div>
-    )
+      <h3>Question</h3>
+
+      <p>Answer.</p>
+    </div>
+  );
 }
 
 export default FAQ;

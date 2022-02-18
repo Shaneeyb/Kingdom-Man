@@ -10,7 +10,6 @@ import TravelersTab from "./CampSection/TravelersSection/TravelersComponent";
 import Hotels from "./CampSection/TravelersSection/HotelsComponent";
 import FAQ from "./CampSection/TravelersSection/FAQComponent";
 import Covid from "./CampSection/TravelersSection/CovidComponent";
-import Footer from "./FooterComponent";
 import Register from "./RegisterComponent";
 
 function Main(params) {
@@ -18,7 +17,7 @@ function Main(params) {
     color: "white",
     width: "100%",
     padding: "0px",
-    backgroundColor: "#0E1822",
+    //backgroundColor: "#0E1822",
     height: '100%',
     minHeight: "100vh"
   };
@@ -63,7 +62,6 @@ function Main(params) {
           </Routes>
         </Router>
       </div>
-      <Footer />
     </div>
   );
 }

@@ -19,6 +19,16 @@ function Camp() {
       color: "black",
       textAlign: "center",
       padding: "40px 80px",
+    },
+    transparentBG: {
+      textAlign: "center",
+    padding: "40px 80px",
+      backgroundImage: `url("https://images.unsplash.com/photo-1470549584009-d347338fc0ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1888&q=80")`, 
+		backgroundPosition: 'bottom',
+		backgroundAttachment: "fixed",
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        width: '100vw'
     }
   };
   return (
@@ -33,13 +43,13 @@ function Camp() {
       <section style={sectionStyle.whiteBG}>
         <GuestSpeakers />
       </section>
-      <section style={sectionStyle}>
+      <section style={sectionStyle.transparentBG}>
         <Location />
       </section>
       <section style={sectionStyle.whiteBG}>
         <TravelersTab />
       </section>
-      <section style={sectionStyle}>
+      <section style={sectionStyle.transparentBG}>
         <Schedule />
       </section>
       <section style={sectionStyle.whiteBG}>

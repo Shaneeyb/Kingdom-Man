@@ -18,6 +18,9 @@ const TravelersTab = () => {
     <div 
     position="static"
     >
+      <h1 style={{
+        padding: "20px"
+      }}>Travelers</h1>
       <Tabs value={selectedTab} onChange={handleChange}>
         <Tab label="Info" />
         <Tab label="Hotels" />
