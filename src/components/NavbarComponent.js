@@ -10,6 +10,11 @@ function NavbarComp() {
     width: "80px",
     height: "80px",
   };
+  const styles={
+    color: "white",
+    padding: "30px",
+    fontSize: 50
+  }
   return (
     <div>
       <div>
@@ -43,15 +48,34 @@ function NavbarComp() {
               id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel"
               placement="end"
+              style={{
+                backgroundColor: 'black',
+                opacity: ".7"
+                
+              }}
             >
               <Offcanvas.Header closeButton></Offcanvas.Header>
-              <Offcanvas.Body>
+              <Offcanvas.Body
+             
+              >
                 <Router>
                   <Nav navbar className="justify-content-end flex-grow-1 pe-3">
-                    <Nav.Link href="/"> Home</Nav.Link>{" "}
-                    <Nav.Link href="/Camp"> Camp</Nav.Link>{" "}
-                    <Nav.Link href="/About"> About</Nav.Link>
-                    <Nav.Link href="/GetInvolved"> Get Involved</Nav.Link>
+                    <Nav.Link 
+                    style={styles}
+                    href="/"
+                    > Home</Nav.Link>{" "}
+                    <Nav.Link 
+                    style={styles}
+                    href="/Camp"
+                    > Camp</Nav.Link>{" "}
+                    <Nav.Link 
+                    style={styles}
+                    href="/About"
+                    > About</Nav.Link>
+                    <Nav.Link 
+                    style={styles}
+                    href="/GetInvolved"
+                    > Get Involved</Nav.Link>
                   </Nav>
                 </Router>
               </Offcanvas.Body>
