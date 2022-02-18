@@ -28,7 +28,7 @@ function NavbarComp() {
           }}
         >
           <Container fluid>
-            <Navbar.Brand>
+            <Navbar.Brand href="/">
               <img
                 src={logo}
                 style={{
