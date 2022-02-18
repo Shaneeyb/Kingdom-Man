@@ -13,27 +13,29 @@ function NavbarComp() {
   return (
     <div>
       <div>
-        <Navbar 
-        bg="light" 
-        expand={false}
-        style={{
-          height: "80px",
-display: "flex",
-backgroundColor: "transparent",
-justifyContent: "center",
-alignItems: "center",
-position: "sticky",
-top: "0",
-fontSize: "1.3rem",
-borderBottom: "1px solid white" 
-        }}
+        <Navbar
+        variant="dark"
+          expand={false}
+          style={{
+            height: "80px",
+            display: "flex",
+            backgroundColor: "transparent",
+            justifyContent: "center",
+            alignItems: "center",
+            position: "sticky",
+            top: "0",
+            fontSize: "1.3rem",
+          }}
         >
           <Container fluid>
             <Navbar.Brand>
-              <img src={logo} style={{ 
-                width: "80px", 
-                height: "80px" 
-                }} />
+              <img
+                src={logo}
+                style={{
+                  width: "80px",
+                  height: "80px",
+                }}
+              />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="offcanvasNavbar" />
             {/* Navbar Offcampus creates the hamburger menu */}

@@ -18,7 +18,7 @@ const styles = {
   },
   date: {
     textAlign: "center",
-    padding: "20px"
+    padding: "8px"
   }
 }
 
@@ -58,7 +58,7 @@ const styles = {
           width: "300px",
           fontSize: "60px",
           justifyContent: "center",
-          textAlign: "top"
+          textAlign: "center"
           }}
             >Register</button>
       </div>
