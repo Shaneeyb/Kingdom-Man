@@ -1,5 +1,4 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
 import {
   Card,
   Button,
@@ -10,8 +9,6 @@ import {
   CardSubtitle,
   CardBody,
 } from "reactstrap";
-
-//import kenobi from "./src/images/kenobi.jpg"
 
 function Title() {
   return <h2>Guest Speakers</h2>;
@@ -25,54 +22,63 @@ function Pictures() {
           <CardImg
             top
             width="100%"
-            src="https://assets3.thrillist.com/v1/image/2928355/1536x1024/crop;webp=auto;jpeg_quality=60;progressive.jpg"
+            src="https://content.thriveglobal.com/wp-content/uploads/2021/09/Kai.jpeg"
             alt="Obi-Wan"
           />
           <CardBody>
             <b>
-              <CardTitle>Obi-Wan Kenobi</CardTitle>{" "}
+              <CardTitle>Mike Kai</CardTitle>{" "}
             </b>
-            <CardSubtitle>the Negotiator. </CardSubtitle>
+            <CardSubtitle>Inspire Waikele Pastor </CardSubtitle>
             <CardText>
-              Coming all the way from Ewa beach is Pastor _____
+              Coming all the way from Ewa beach is Pastor Waikele
             </CardText>
-            <Button>Pastor _____</Button>
+            <Button 
+            href="https://www.inspirechurch.live/about/" 
+            color="primary"
+            >Pastor Mike Kai</Button>
           </CardBody>
         </Card>
         <Card>
           <CardImg
             top
             width="100%"
-            src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/12/One-Punch-Man-Saitama-Says-OK.jpg?q=50&fit=crop&w=740&h=370&dpr=1.5"
+            src="https://content.thriveglobal.com/wp-content/uploads/2021/09/Kai.jpeg"
             alt="Saitama"
           />
           <CardBody>
-            <b>
-              <CardTitle>Saitama</CardTitle>{" "}
+          <b>
+              <CardTitle>Mike Kai</CardTitle>{" "}
             </b>
-            <CardSubtitle>Caped Baldy</CardSubtitle>
+            <CardSubtitle>Inspire Waikele Pastor </CardSubtitle>
             <CardText>
-              Coming all the way from Ewa beach is Pastor _____
+              Coming all the way from Ewa beach is Pastor Waikele
             </CardText>
-            <Button>Pastor _____</Button>
-          </CardBody>
+            <Button 
+            href="https://www.inspirechurch.live/about/" 
+            color="primary"
+            >Pastor Mike Kai</Button>
+            </CardBody>
         </Card>
         <Card>
           <CardImg
             top
             width="100%"
-            src="https://preview.redd.it/qwwri9fw4b471.png?width=853&format=png&auto=webp&s=43739004a428a020f95d7334e808d007f1394e68"
+            src="https://content.thriveglobal.com/wp-content/uploads/2021/09/Kai.jpeg"
             alt="Bokuto"
           />
           <CardBody>
-            <b>
-              <CardTitle>Oikawa</CardTitle>{" "}
+          <b>
+              <CardTitle>Mike Kai</CardTitle>{" "}
             </b>
-            <CardSubtitle>The Great King</CardSubtitle>
+            <CardSubtitle>Inspire Waikele Pastor </CardSubtitle>
             <CardText>
-              Coming all the way from Ewa beach is Pastor _____
+              Coming all the way from Ewa beach is Pastor Waikele
             </CardText>
-            <Button>Pastor _____</Button>
+            <Button 
+            href="https://www.inspirechurch.live/about/" 
+            color="primary"
+            >Pastor Mike Kai</Button>
           </CardBody>
         </Card>
       </CardGroup>

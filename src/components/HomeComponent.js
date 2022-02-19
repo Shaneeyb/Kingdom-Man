@@ -11,11 +11,12 @@ function Home() {
       main: {
         textAlign: "center",
         fontWeight: "bold",
-        padding: "60px",
+        padding: "40px",
+        fontSize: "60px"
       },
       date: {
         textAlign: "center",
-        padding: "8px",
+        padding: "none"
       },
     };
 
@@ -35,6 +36,19 @@ function Home() {
       </div>
     );
   }
+ 
+
+/*
+  style={{
+            textAlign: "center",
+            padding: "3vh",
+            border: "none",
+            height: "80px",
+            width: "300px",
+            fontSize: "60px",
+            justifyContent: "center",
+          }}
+*/
 
   function RegisterBtn() {
     return (
@@ -55,8 +69,8 @@ function Home() {
             height: "80px",
             width: "300px",
             fontSize: "60px",
-            justifyContent: "center",
-            textAlign: "center",
+            textAlign: "center"
+
           }}
         >
           Register
