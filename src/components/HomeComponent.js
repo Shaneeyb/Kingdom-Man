@@ -54,9 +54,8 @@ function Home() {
           style={{
             padding: "1rem 1rem",
             border: "none",
-  
             width: "300px",
-            fontSize: "60px",
+            fontSize: "40px",
             textAlign: "center"
 
           }}
