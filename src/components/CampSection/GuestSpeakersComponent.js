@@ -11,7 +11,9 @@ import {
 } from "reactstrap";
 
 function Title() {
-  return <h2>Guest Speakers</h2>;
+  return <h2 style={{
+    padding: "10px"
+  }}>Guest Speakers</h2>;
 }
 
 function Pictures() {

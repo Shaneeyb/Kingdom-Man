@@ -82,7 +82,7 @@ function BottomText() {
   const style = {
     h2: {
       textAlign: "center",
-      padding: "30px 80px",
+      padding: "5px 80px",
     },
     p: {
       textAlign: "center",
@@ -105,11 +105,13 @@ function BottomText() {
 
 function Partners() {
     return (
-      <div>
+      <div style={{
+        display: 'flex',  justifyContent:'center', alignItems:'center', height: '10vh', padding: "10vh"
+      }}>
       <img
-      height="70px" width= "200px"
+      height="150px" width= "400px"
      src="https://images.squarespace-cdn.com/content/v1/5a7cc3b0914e6b8d66356df6/1625178027847-121QVL7M8542AWXUUG32/Screen+Shot+2021-07-01+at+12.12.35+PM.png" 
-     alt="camping" 
+     alt="camping"  
     />
     </div>
     )

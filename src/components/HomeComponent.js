@@ -38,18 +38,6 @@ function Home() {
   }
  
 
-/*
-  style={{
-            textAlign: "center",
-            padding: "3vh",
-            border: "none",
-            height: "80px",
-            width: "300px",
-            fontSize: "60px",
-            justifyContent: "center",
-          }}
-*/
-
   function RegisterBtn() {
     return (
       <div
@@ -64,9 +52,9 @@ function Home() {
           className="btn btn-danger"
           onClick={() => navigate("/RegisterComponent")}
           style={{
-            padding: "3vh",
+            padding: "1rem 1rem",
             border: "none",
-            height: "80px",
+  
             width: "300px",
             fontSize: "60px",
             textAlign: "center"
