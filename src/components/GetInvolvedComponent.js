@@ -40,10 +40,13 @@ function Join() {
           padding: "50px",
         }}
       >
-        <button 
-          className="btn btn-danger" 
-          onClick={() => navigate("/RegisterComponent")}
-            >Register</button>
+        <a href="https://inspirechurch.brushfire.com/arise-2023/527463">
+          <button 
+           className="btn btn-danger" 
+            onClick={() => navigate("/RegisterComponent")}
+             >Register
+          </button>
+        </a>
       </div>
     </div>
   );
