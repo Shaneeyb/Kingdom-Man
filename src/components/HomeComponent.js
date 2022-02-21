@@ -1,9 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+
 
 function Home() {
-  let navigate = useNavigate();
 
   function HeaderText() {
     const styles = {
@@ -11,11 +9,11 @@ function Home() {
         textAlign: "center",
         fontWeight: "bold",
         padding: "40px",
-        fontSize: "60px"
+        fontSize: "60px",
       },
       date: {
         textAlign: "center",
-        padding: "none"
+        padding: "none",
       },
     };
 
@@ -35,7 +33,6 @@ function Home() {
       </div>
     );
   }
- 
 
   function RegisterBtn() {
     return (
@@ -47,22 +44,20 @@ function Home() {
           padding: "60px",
         }}
       >
-        <Link to="https://inspirechurch.brushfire.com/arise-2023/527463">
-        <button
-          className="btn btn-danger"
-          onClick={() => navigate("https://inspirechurch.brushfire.com/arise-2023/527463")}
-          style={{
-            padding: "1rem 1rem",
-            border: "none",
-            width: "300px",
-            fontSize: "40px",
-            textAlign: "center"
-
-          }}
-        >
-          Register
-        </button>
-        </Link>
+        <a href="https://inspirechurch.brushfire.com/arise-2023/527463">
+          <button
+            className="btn btn-danger"
+            style={{
+              padding: "1rem 1rem",
+              border: "none",
+              width: "300px",
+              fontSize: "40px",
+              textAlign: "center",
+            }}
+          >
+            Register
+          </button>
+        </a>
       </div>
     );
   }
