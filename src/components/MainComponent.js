@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import NavbarComp from "./NavbarComponent";
 import Home from "./HomeComponent";
-import About from "./AboutUsComponent";
 import Camp from "./CampSection/CampMainComponent";
 import GetInvolved from "./GetInvolvedComponent";
+import About from "./AboutUsComponent";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import InfoText from "./CampSection/TravelersSection/InfoComponent";
 import TravelersTab from "./CampSection/TravelersSection/TravelersComponent";
