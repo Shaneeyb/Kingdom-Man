@@ -1,7 +1,6 @@
 import React from "react";
-import Register from "./RegisterComponent";
-//import CampfireBG from "/images/CampfireBG.jpg"
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Home() {
   let navigate = useNavigate();
@@ -48,9 +47,10 @@ function Home() {
           padding: "60px",
         }}
       >
+        <Link to="https://inspirechurch.brushfire.com/arise-2023/527463">
         <button
           className="btn btn-danger"
-          onClick={() => navigate("/RegisterComponent")}
+          onClick={() => navigate("https://inspirechurch.brushfire.com/arise-2023/527463")}
           style={{
             padding: "1rem 1rem",
             border: "none",
@@ -62,6 +62,7 @@ function Home() {
         >
           Register
         </button>
+        </Link>
       </div>
     );
   }

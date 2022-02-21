@@ -2,7 +2,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import { Button } from "react-bootstrap";
-import Register from "./RegisterComponent";
 import { useNavigate } from "react-router-dom"
 
 function Join() {
@@ -78,21 +77,22 @@ function BottomTextAndForm() {
       <div>
         <Container>
           <Form>
-            <Form.Group controlId="form.Name">
-              <Form.Label>Name</Form.Label>
+            <Form.Group controlId="form.Name" >
+              <Form.Label style={style.form} >Name</Form.Label>
               <Form.Control type="text" placeholder="Obi-Wan Kenobi" />
             </Form.Group>
             <Form.Group controlId="form.Email">
-              <Form.Label>Email address</Form.Label>
+              <Form.Label style={style.form} >Email address</Form.Label>
               <Form.Control
                 type="email"
                 placeholder="MySuperGreatEmailAddress@example.com"
               />
             </Form.Group>
             <Form.Group controlId="form.Textarea">
-              <Form.Label>Inspire Location</Form.Label>
+              <Form.Label style={style.form} >Inspire Location</Form.Label>
               <Form.Control as="textarea" rows={2} placeholder="Tatooine" />
             </Form.Group>
+            <br/>
             <Button variant="primary" type="submit">
               Submit
             </Button>

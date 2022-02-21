@@ -1,5 +1,4 @@
 import React from "react";
-import Register from "../RegisterComponent";
 import { useNavigate } from "react-router-dom"
 
 function TopText() {
@@ -44,7 +43,7 @@ function RegisterBtn() {
       <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', padding: "10px"}}>
           <button 
           className="btn btn-danger" 
-          onClick={() => navigate("/RegisterComponent")}
+          //onClick={() => navigate("/")}
             >Register</button>
         
       </div>
