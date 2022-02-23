@@ -66,24 +66,3 @@ function Main(params) {
 
 export default Main;
 
-
-/*
-
-<div
-        className="App"
-        style={{
-          //backgroundImage: `url("https://images.unsplash.com/photo-1470549584009-d347338fc0ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1888&q=80")`,
-          backgroundColor: "#0E1822",
-          width: "70%",
-          height: "auto",
-          position: "fixed",
-          top: "0",
-          bottom: "0",
-          left: "0",
-          backgroundPosition: "center center no-repeat",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      />
-
-*/

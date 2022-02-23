@@ -1,3 +1,13 @@
 Nav.link {
     color: yellow;
 }
+
+iframe {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    flex: auto;
+    align-items: center;
+}
