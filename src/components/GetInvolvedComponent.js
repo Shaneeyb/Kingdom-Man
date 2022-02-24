@@ -79,7 +79,9 @@ function BottomTextAndForm() {
       </div>
       <div>
         <Container>
-          <Form>
+          <Form style={{
+              padding: "20px"
+            }}>
             <Form.Group controlId="form.Name" >
               <Form.Label style={style.form} >Name</Form.Label>
               <Form.Control type="text" placeholder="Obi-Wan Kenobi" />
