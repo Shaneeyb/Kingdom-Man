@@ -1,3 +1,7 @@
 Nav.link {
     color: yellow;
 }
+.Navbar{
+    background-color: red !important;
+    background-size: 90px;
+}

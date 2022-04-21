@@ -11,12 +11,11 @@ import Hotels from "./CampSection/TravelersSection/HotelsComponent";
 import FAQ from "./CampSection/TravelersSection/FAQComponent";
 import Covid from "./CampSection/TravelersSection/CovidComponent";
 
-function Main(params) {
+function Main() {
   const txtAndBGStyle = {
     color: "white",
     width: "100%",
     padding: "0px",
-    //backgroundColor: "#0E1822",
     height: '100%',
     minHeight: "100vh"
   };
@@ -24,9 +23,8 @@ function Main(params) {
   return (
     <div style={txtAndBGStyle}>
       <div>
-        <NavbarComp />
+          <NavbarComp />
       </div>
-
 
       <div>
         <Router>
@@ -56,7 +54,6 @@ function Main(params) {
               path="/CampSection/TravelersSection/FAQComponent"
               element={<FAQ />}
             />
-           
           </Routes>
         </Router>
       </div>

@@ -10,7 +10,7 @@ import TravelersTab from "./TravelersSection/TravelersComponent.js";
 function Camp() {
   const sectionStyle = {
     textAlign: "center",
-    padding: "40px 80px",
+    padding: "10px 10px",
     whiteBG: {
       padding: "40px",
       backgroundColor: "white",
@@ -22,7 +22,7 @@ function Camp() {
     },
     transparentBG: {
       textAlign: "center",
-    padding: "40px 80px",
+      padding: "40px 80px",
       backgroundImage: `url("https://images.unsplash.com/photo-1470549584009-d347338fc0ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1888&q=80")`, 
 		backgroundPosition: 'bottom',
 		backgroundAttachment: "fixed",

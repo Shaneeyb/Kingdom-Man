@@ -13,9 +13,7 @@ function KMVideo() {
         <iframe
           src="https://player.vimeo.com/video/328889318?h=7476b833b8&title=0&byline=0&portrait=0"
           frameBorder="0"
-          allow="autoplay"
-          allow="fullscreen"
-          allow="picture-in-picture"
+          allow="autoplay fullscreen picture-in-picture"
           allowFullScreen
           style={{
             position: "absolute",
@@ -36,7 +34,7 @@ function Text() {
     <div>
       <p
         style={{
-          padding: "30px",
+          padding: "15px",
         }}
       >
         Kingdom Man Ministry at Inspire Church is leading the way in Hawaii to

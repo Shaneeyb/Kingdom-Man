@@ -6,7 +6,7 @@ function TopText() {
   return (
     <div>
       <h2 style={{
-        padding: "40px"
+        padding: "10px"
       }}>Camping</h2>
 
       <div>
@@ -18,7 +18,7 @@ function TopText() {
     </div>
 
       <p style={{
-        padding: "30px"
+        padding: "5px"
       }}>
         You will be sleeping _________. Description of campground. Lorem ipsum
         dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

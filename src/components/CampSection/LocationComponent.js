@@ -35,7 +35,7 @@ function Map() {
 function LocationDesc() {
     return (
         <p style={{
-            padding: "35px"
+            padding: "10px"
           }}>
             We choose this location because it is close to our heart. The ___ is known for housing christian events and they have blessed us to be able to host this event. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>

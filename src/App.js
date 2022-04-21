@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './components/MainComponent';
-import { WidgetContainer } from './WidgetContainer';
+import"./index.css"
 //import HomeComponent from "./components/homeComponent.js"
 
 
