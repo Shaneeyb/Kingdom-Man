@@ -8,7 +8,6 @@ function TopText() {
       padding: "20px"
     },
     other: {
-      textAlign: "center",
       padding: "10px"
     }
   };

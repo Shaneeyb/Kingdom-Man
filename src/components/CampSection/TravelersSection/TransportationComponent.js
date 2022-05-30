@@ -9,7 +9,8 @@ function TransportationText() {
 <b>
         <h2
           style={{
-            padding: "5px"
+            padding: "5px",
+            textAlign: "center"
           }}
         >
           Transportation

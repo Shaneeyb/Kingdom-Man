@@ -8,7 +8,7 @@ import Covid from "./CovidComponent";
 
 const TravelersTab = () => {
   const [selectedTab, setSelectedTab] = React.useState(0);
-
+  
   const handleChange = (event, newValue) => {
     setSelectedTab(newValue);
   };
@@ -18,7 +18,7 @@ const TravelersTab = () => {
     position="static"
     >
       <h1 style={{
-        padding: "20px"
+        textAlign: "center"
       }}>Travelers</h1>
       
       {selectedTab === 0 && <InfoText />}

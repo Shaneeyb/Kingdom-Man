@@ -5,21 +5,32 @@ function TopText() {
 
   return (
     <div>
-      <h2 style={{
-        padding: "10px"
-      }}>Camping</h2>
+      <h2
+        style={{
+          padding: "10px",
+          textAlign: "center",
+        }}
+      >
+        Camping
+      </h2>
 
       <div>
-      <img
-     src="https://images.unsplash.com/photo-1610912763956-2d9374070090?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" 
-     alt="camping" 
-      className="d-block w-100"
-    />
-    </div>
+        <img
+          src="https://images.unsplash.com/photo-1610912763956-2d9374070090?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+          alt="camping"
+          className="d-block w-100"
+          style={{
+            borderRadius: "25px",
+            boxShadow: "0 0 10px rgba(0,0,0,0.63)",
+          }}
+        />
+      </div>
 
-      <p style={{
-        padding: "5px"
-      }}>
+      <p
+        style={{
+          padding: "20px",
+        }}
+      >
         You will be sleeping _________. Description of campground. Lorem ipsum
         dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

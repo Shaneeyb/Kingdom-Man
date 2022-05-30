@@ -21,6 +21,8 @@ function KMVideo() {
             left: "0",
             width: "100%",
             height: "100%",
+            borderRadius: "25px",
+            boxShadow: "0 0 10px rgba(0,0,0,0.63)",
           }}
           title="Kingdom Man Camp 2019 Recap"
         ></iframe>
@@ -34,7 +36,8 @@ function Text() {
     <div>
       <p
         style={{
-          padding: "15px",
+          padding: "20px",
+          borderBottom: ".5px solid white"
         }}
       >
         Kingdom Man Ministry at Inspire Church is leading the way in Hawaii to

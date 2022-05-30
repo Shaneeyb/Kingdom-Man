@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../images/logo.png"
 
 function Home() {
   function HeaderText() {
@@ -8,15 +9,28 @@ function Home() {
         fontWeight: "bold",
         padding: "40px",
         fontSize: "60px",
+        position: "relative",
+        top: "75px",
       },
       date: {
         textAlign: "center",
         padding: "none",
+        position: "relative",
+        top: "60px",
       },
     };
 
     return (
       <div>
+        <img
+          src={logo}
+          style={{
+            width: "80px",
+            position: "absolute",
+            left: "15px",
+            top: "15px"
+          }}
+        />
         <div className="container">
           <div className="row">
             <div className="mx-auto">
@@ -51,11 +65,14 @@ function Home() {
               width: "300px",
               fontSize: "40px",
               textAlign: "center",
+              position: "relative",
+              top: "70px",
             }}
           >
             Register
           </button>
         </a>
+        
       </div>
     );
   }

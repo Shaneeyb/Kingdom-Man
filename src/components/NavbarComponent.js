@@ -1,8 +1,11 @@
 import React from "react";
 import { Navbar, Nav, Offcanvas, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleInfo, faHouse, faCampground, faHandshake } from "@fortawesome/free-solid-svg-icons";
+
 
 function NavbarComp() {
+
   return (
     <div
       style={{
@@ -21,13 +24,50 @@ function NavbarComp() {
         >
           <Nav className="w-100">
             <div className=" d-flex justify-content-around w-100 flex-row">
-              <Nav.Link href="/" className="fas-house-blank">
-                <FontAwesomeIcon icon="fas-light fa-house" />
+              <Nav.Link
+                href="/"
+                style={{
+                  fontSize: "1rem",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <FontAwesomeIcon icon={faHouse} className="fa-xl" />
                 Home
               </Nav.Link>
-              <Nav.Link href="/About"> About</Nav.Link>
-              <Nav.Link href="/Camp"> Camp</Nav.Link>
-              <Nav.Link href="/GetInvolved">join</Nav.Link>
+              <Nav.Link
+                href="/Camp"
+                style={{
+                  fontSize: "1rem",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <FontAwesomeIcon icon={faCampground} className="fa-xl" />
+                Camp
+              </Nav.Link>
+              <Nav.Link
+                href="/About"
+                style={{
+                  fontSize: "1rem",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <FontAwesomeIcon icon={faCircleInfo} className="fa-xl" />
+                About
+              </Nav.Link>
+              <Nav.Link
+                href="/GetInvolved"
+                style={{
+                  fontSize: "1rem",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <FontAwesomeIcon icon={faHandshake} className="fa-xl" />
+                Join
+              </Nav.Link>
             </div>
           </Nav>
         </Nav>

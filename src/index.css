@@ -1,7 +1,13 @@
 Nav.link {
-    color: yellow;
+  color: yellow;
 }
-.Navbar{
-    background-color: red !important;
-    background-size: 90px;
+.Navbar {
+  background-color: red !important;
+  background-size: 90px;
+}
+.containerImg {
+  background: linear-gradient(to bottom, transparent, black),
+    url("https://content.thriveglobal.com/wp-content/uploads/2021/09/Kai.jpeg");
+  background-size: cover;
+  background-position-x: center;
 }

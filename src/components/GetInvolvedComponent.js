@@ -8,11 +8,10 @@ function Join() {
   const style = {
     h1: {
       textAlign: "center",
-      padding: "40px 80px",
     },
     h3: {
       textAlign: "center",
-      padding: "10px 80px",
+      padding: "10px",
     },
   };
 
@@ -20,8 +19,6 @@ function Join() {
 
   return (
     <div>
-      <h1 style={style.h1}> Get Involved! </h1>
-
       <h3 style={style.h3}>Become Who you Were Created to Be</h3>
 
       <h4 style={style.h3}>Join a Men's 33 group</h4>
@@ -37,14 +34,16 @@ function Join() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          padding: "50px",
+          paddingBottom: "20px",
+          borderBottom: ".5px solid white",
         }}
       >
         <a href="https://inspirechurch.brushfire.com/arise-2023/527463">
-          <button 
-           className="btn btn-danger" 
+          <button
+            className="btn btn-danger"
             onClick={() => navigate("/RegisterComponent")}
-             >Register
+          >
+            Register
           </button>
         </a>
       </div>
@@ -58,11 +57,10 @@ function BottomTextAndForm() {
   const style = {
     h1: {
       textAlign: "center",
-      padding: "40px 80px",
+      paddingTop: "20px"
     },
     h3: {
-      textAlign: "center",
-      padding: "10px 80px",
+      padding: "20px",
     },
   };
 
@@ -84,18 +82,18 @@ function BottomTextAndForm() {
             }}>
             <Form.Group controlId="form.Name" >
               <Form.Label style={style.form} >Name</Form.Label>
-              <Form.Control type="text" placeholder="Obi-Wan Kenobi" />
+              <Form.Control type="text" placeholder="First & Last" />
             </Form.Group>
             <Form.Group controlId="form.Email">
               <Form.Label style={style.form} >Email address</Form.Label>
               <Form.Control
                 type="email"
-                placeholder="MySuperGreatEmailAddress@example.com"
+                placeholder="Email@example.com"
               />
             </Form.Group>
             <Form.Group controlId="form.Textarea">
               <Form.Label style={style.form} >Inspire Location</Form.Label>
-              <Form.Control as="textarea" rows={2} placeholder="Tatooine" />
+              <Form.Control as="textarea" rows={2} placeholder="Waikele" />
             </Form.Group>
             <br/>
             <Button variant="primary" type="submit">
@@ -111,8 +109,42 @@ function BottomTextAndForm() {
 function GetInvolved() {
   return (
     <div>
-      <Join />
-      <BottomTextAndForm />
+      <h1
+        style={{
+          padding: "10px",
+          textAlign: "center",
+        }}
+      >
+        {" "}
+        Get Involved!{" "}
+      </h1>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <div
+          classname="container"
+          style={{
+            position: "relative",
+            justifyContent: "center",
+            backgroundAttachment: "fixed",
+            boxShadow: "inset 0 0 2000px rgba(255, 255, 255, .5)",
+            backdropFilter: "blur(5px)",
+            backgroundColor: "#6c757d4d",
+            width: "90%",
+            textAlign: "left",
+            padding: "10px 10px",
+            top: "10px",
+            borderRadius: "25px",
+            marginBottom: "110px",
+          }}
+        >
+          <Join />
+          <BottomTextAndForm />
+        </div>
+      </div>
     </div>
   );
 }

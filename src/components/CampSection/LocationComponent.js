@@ -3,7 +3,10 @@ import React from 'react';
 function Header() {
     return (
         <div>
-            <h2>
+            <h2 style={{
+                padding: "20px",
+                textAlign: "center"
+            }}>
                 Location
             </h2>
             <h5 style={{
@@ -34,12 +37,18 @@ function Map() {
 
 function LocationDesc() {
     return (
-        <p style={{
-            padding: "10px"
-          }}>
-            We choose this location because it is close to our heart. The ___ is known for housing christian events and they have blessed us to be able to host this event. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-    )
+      <p
+        style={{
+          padding: "20px",
+          borderBottom: ".5px solid white",
+        }}
+      >
+        We choose this location because it is close to our heart. The ___ is
+        known for housing christian events and they have blessed us to be able
+        to host this event. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    );
 }
 
 function Location() {
