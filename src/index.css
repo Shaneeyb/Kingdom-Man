@@ -5,9 +5,29 @@ Nav.link {
   background-color: red !important;
   background-size: 90px;
 }
-.containerImg {
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Background transparency is not working */
   background: linear-gradient(to bottom, transparent, black),
     url("https://content.thriveglobal.com/wp-content/uploads/2021/09/Kai.jpeg");
   background-size: cover;
   background-position-x: center;
+}
+.swiper-slide {
+    width: 100%;
+}
+.swiper-slide:nth-child(1n) {
+  width: 80%;
+}
+.swiper-slide:nth-child(2n) {
+  width: 80%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 80%;
 }

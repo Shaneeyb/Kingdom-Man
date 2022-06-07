@@ -1,15 +1,6 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
-import {
-  Card,
-  Button,
-  CardImg,
-  CardTitle,
-  CardText,
-  CardGroup,
-  CardSubtitle,
-  CardBody,
-} from "reactstrap";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 function Title() {
   return (
@@ -26,8 +17,49 @@ function Title() {
 
 function Pictures() {
   return (
+    <div
+      style={{
+        paddingBottom: "20px",
+        borderBottom: ".5px solid white",
+      }}
+    >
+      <Swiper slidesPerView={"auto"} spaceBetween={20} className="swiper">
+        <SwiperSlide className="swiper-slide">
+          <img
+            src="https://content.thriveglobal.com/wp-content/uploads/2021/09/Kai.jpeg"
+            alt="Mike Kai"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://content.thriveglobal.com/wp-content/uploads/2021/09/Kai.jpeg"
+            alt="Mike Kai"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://content.thriveglobal.com/wp-content/uploads/2021/09/Kai.jpeg"
+            alt="Mike Kai"
+          />
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
+}
+
+function GuestSpeakers() {
+  return (
     <div>
-      <Carousel
+      <Title />
+      <Pictures />
+    </div>
+  );
+}
+
+export default GuestSpeakers;
+
+/*
+<Carousel
         controls={false}
         interval={null}
         style={{
@@ -90,35 +122,4 @@ function Pictures() {
           </Card>
         </Carousel.Item>
       </Carousel>
-    </div>
-  );
-}
-
-function GuestSpeakers() {
-  return (
-    <div>
-      <Title />
-      <Pictures />
-    </div>
-  );
-}
-
-export default GuestSpeakers;
-
-/*
-<Card
-            style={{
-              borderRadius: "25px",
-            }}
-          >
-            <CardImg
-              style={{
-                borderRadius: "25px",
-              }}
-              top
-              width="100%"
-              src="https://content.thriveglobal.com/wp-content/uploads/2021/09/Kai.jpeg"
-              alt="Obi-Wan"
-            />
-          </Card>
  */
