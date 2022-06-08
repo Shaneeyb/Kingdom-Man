@@ -31,3 +31,7 @@ Nav.link {
 .swiper-slide:nth-child(3n) {
   width: 80%;
 }
+
+.h5 {
+  padding: 10px;
+}

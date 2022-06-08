@@ -4,7 +4,7 @@ import GuestSpeakers from "./GuestSpeakersComponent.js";
 import Location from "./LocationComponent.js";
 import Schedule from "./ScheduleComponent.js";
 import Camping from "./CampingComponent.js";
-import TravelersTab from "./TravelersSection/TravelersComponent.js";
+import TravelersTab from "./TravelersComponent.js";
 
 function Camp() {
   
