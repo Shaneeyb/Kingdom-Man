@@ -47,9 +47,6 @@ function TopText() {
 
 function RegisterBtn() {
 
-  let navigate= useNavigate();
-
-
     return (
       <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', padding: "10px"}}>
         <a href="https://inspirechurch.brushfire.com/arise-2023/527463">

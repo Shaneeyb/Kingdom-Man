@@ -24,6 +24,7 @@ function Home() {
       <div>
         <img
           src={logo}
+          alt="campfire img"
           style={{
             width: "80px",
             position: "absolute",

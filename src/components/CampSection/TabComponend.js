@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 
@@ -13,7 +12,9 @@ function TravelersTab() {
         className="mb-3"
       >
         <Tab eventKey="info" title="Info">
-          <h2>General Information</h2>
+          <h2 style={{
+            textAlign: "center"
+          }}>General Information</h2>
           <p
             style={{
               padding: "10px",
@@ -153,40 +154,3 @@ function TravelersTab() {
 };
 
 export default TravelersTab;
-
-
-
-/* 
-
-import InfoText from "./InfoComponent";
-import TransportationText from "./TransportationComponent";
-import Hotels from "./HotelsComponent";
-import FAQ from "./FAQComponent";
-import Covid from "./CovidComponent";
-
-
-const TravelersTab = () => {
-  const [selectedTab, setSelectedTab] = React.useState(0);
-  
-  const handleChange = (event, newValue) => {
-    setSelectedTab(newValue);
-  };
-
-  return (
-    <div 
-    position="static"
-    >
-      <h1 style={{
-        textAlign: "center"
-      }}>Travelers</h1>
-      
-      {selectedTab === 0 && <InfoText />}
-      {selectedTab === 1 && <Hotels />}
-      {selectedTab === 2 && <TransportationText />}
-      {selectedTab === 3 && <Covid />}
-      {selectedTab === 4 && <FAQ />}
-    </div>
-  );
-};
-
-*/

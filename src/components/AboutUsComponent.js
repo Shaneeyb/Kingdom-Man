@@ -3,17 +3,6 @@ import React from "react";
 //import USVetsLogo from "./Images/USVetsLogo.png"
 
 function TopText() {
-  const style = {
-    h1: {
-      textAlign: "center",
-      position: "relative",
-      
-    },
-    p: {
-      textAlign: "center",
-      position: "relative",
-    },
-  };
 
   return (
     <div>
@@ -104,7 +93,7 @@ function About() {
       display: "flex",
       justifyContent: "center",
     }}>
-      <div classname="container" style={style.frost}>
+      <div className="container" style={style.frost}>
         <BottomText />
       </div>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Offcanvas, Container } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleInfo, faHouse, faCampground, faHandshake } from "@fortawesome/free-solid-svg-icons";
 

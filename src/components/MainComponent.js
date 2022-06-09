@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import NavbarComp from "./NavbarComponent";
 import Home from "./HomeComponent";
 import Camp from "./CampSection/CampMainComponent";
